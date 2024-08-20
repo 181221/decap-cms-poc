@@ -1,12 +1,10 @@
-import BlogPost, { metadata } from "@/app/markdown/page.md";
+import BlogPost, { metadata } from "@/content/home.md";
 
 export default function Page() {
   return (
     <>
       <div>Title: {metadata.title}</div>
-      <div>Snippet: {metadata.snippet}</div>
       <div>Date: {metadata.date}</div>
-      <BlogPost />
     </>
   );
 }
