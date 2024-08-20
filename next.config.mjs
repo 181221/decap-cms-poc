@@ -5,11 +5,11 @@ import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+  output: "export",
 };
 
 const withMDX = createMDX({
   extension: /\.mdx?$/,
-  output: "export",
   options: {
     remarkPlugins: [remarkFrontmatter, [remarkMdxFrontmatter, { name: "metadata" }]],
   },
