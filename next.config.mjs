@@ -9,11 +9,9 @@ const nextConfig = {
 
 const withMDX = createMDX({
   extension: /\.mdx?$/,
+  output: "export",
   options: {
-    remarkPlugins: [
-      remarkFrontmatter,
-      [remarkMdxFrontmatter, { name: "metadata" }],
-    ],
+    remarkPlugins: [remarkFrontmatter, [remarkMdxFrontmatter, { name: "metadata" }]],
   },
 });
 
