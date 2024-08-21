@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main # Branch to update (optional; defaults to master)
+  base_url: https://oauthcms.azurewebsites.net
+  repo: 181221/decap-cms-poc
 media_folder: public/img
 public_folder: img
 collections:
